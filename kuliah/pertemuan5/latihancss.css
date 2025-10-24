@@ -21,12 +21,15 @@ body {
     background-color: black;
 }
 a {
-    display: block;
-    width: 200px;
-    height: 80px;
-    background-image: url(img/button.png);
-    background-position: center bottom;
-}
+    color: rgb(134, 4, 13);
+    font-family: "Bitcount Grid Single", system-ui;
+    letter-spacing: 2px;
+    font-size: 15px;
+} 
 a:hover {
-    background-position: center top;
+    color: white;
+}
+body {
+    background-image: url(img/Bonny.gif);
+    background-size: 98%;
 }

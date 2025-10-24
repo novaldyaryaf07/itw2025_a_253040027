@@ -16,6 +16,26 @@ p {
 }
 .InstagramPutih {
     color: white;
+    text-decoration: none;
+}
+.InstagramMerah {
+    color: red;
+}
+.InstagramPutih:hover {
+    color: red;
+    text-decoration: underline;
+}
+.MarkPutih {
+    color: white;
+}
+.MarkNoUnderline {
+    text-decoration: none;
+    font-weight: 800;
+    color: blue;
+}
+.MarkNoUnderline:hover {
+    color: white;
+    background-color: blue;
 }
 .Orange {
     color: orange;

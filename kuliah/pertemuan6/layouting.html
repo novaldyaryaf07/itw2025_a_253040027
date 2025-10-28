@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar CSS Layout</title>
+    <style>
+        h1 {
+            /* background-color: salmon; */
+        }
+        p {
+            /* background-color: darkgreen; */
+        }
+        a {
+            /* background-color: orange; */
+        }
+        .main {
+            background-color: lightblue;
+        }
+        .nav {
+            background-color: salmon;
+        }
+        .p2 {
+            font-size: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+        }
+        .p2 span {
+            color: red;
+        }
+        .kotak-block {
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+        }
+        .kotak-inline {
+            background-color: lightgreen;
+            width: 80px;
+            text-align: center;
+            display: inline-block;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+        }
+        .kotak-inline:hover {
+            background-color: black;
+            color: white;
+        }
+        .info-penting {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            overflow: scroll;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Hello World</h1>
+        <p>Valdy</p>
+        <p class="p2">I<span>T</span>W</p>
+    </div>
+    <div class="nav">
+        <a href="#">Informatika</a>
+        <a href="#">UNPAS</a>
+    </div>
+    <hr>
+    
+    <div class="kotak-block">1</div>
+    <a href="#" class="kotak-inline">Home</a>
+    <a href="#" class="kotak-inline">Product</a>
+    <a href="#" class="kotak-inline">About</a>
+
+    <p class="info-penting">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae nobis, porro non quidem animi quis sed quo perferendis tempore optio cumque maiores incidunt temporibus neque molestiae vitae suscipit. Laborum, maxime.
+    </p>
+</body>
+</html>

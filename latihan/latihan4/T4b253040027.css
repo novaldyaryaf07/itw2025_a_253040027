@@ -51,7 +51,7 @@ table {
 body {
     font: 16px/28px arial, sans-serif;
     background-color: #eaeaea;
-    background-image: url(img/y-so-serious-white.png);
+    background-image: linear-gradient(to bottom, lightgray, white);
     color: #333;
 }
 
@@ -84,13 +84,13 @@ body {
 .header a {
     position: relative;
     text-decoration: none;
-    color: darkred;
+    color: darkblue;
     padding: 10px 0;
     transition: .5s ease;
 }
 
 .header a:hover {
-    color: salmon;
+    color: goldenrod;
 }
 
 .header a::after {
@@ -100,7 +100,7 @@ body {
     left: 0;
     width: 0;
     height: 3px;
-    background-color: salmon;
+    background-color: goldenrod;
     transition: width 0.3s ease;
 }
 
@@ -110,11 +110,11 @@ body {
 
 .car {
     height: 280px;
-    background-image: url(img/car.jpg);
+    background-image: url(img/abhinand-venugopal-gl52-awjBL4-unsplash.jpg);
     background-size: cover;
-    background-position: 0px -180px;
-    border-top: 5px solid gray;
-    border-bottom: 5px solid darkred;
+    background-position: 0px -450px;
+    border-top: 5px solid goldenrod;
+    border-bottom: 5px solid darkblue;
 }
 
 .content {
@@ -133,11 +133,11 @@ body {
 
 .content .penulis {
     font-size: 11px;
-    margin-top: -5px;
+    margin-top: -2px;
 }
 
 .content .penulis a {
-    color: salmon;
+    color: darkblue;
     text-decoration: none;
 }
 
@@ -146,13 +146,225 @@ body {
     font-size: 14px;
 }
 
-ul .jenis-jesko {
-    margin-left: 10px;
+.wrapper {
+    perspective: 3000px;
+    margin-left: 25px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.card {
+    flex: 1;
+    width: 360px;
+    height: 530px;
+    transform-style: preserve-3d;
+    transition: transform .8s ease-in-out;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), 
+    -5px -5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.front-page, .back-page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+}
+
+.front-page {
+    background-image: url(img/maharram-hasanli-E5XVuootTyo-unsplash.jpg);
+    background-size: cover;
+}
+
+.card-info {
+    position: absolute;
+    bottom: 50px;
+    left: 45px;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.card-title {
+    font-style: 2rem;
+    font-weight: bold;
+}
+
+.card-subtitle {
+    font-size: 1.2rem;
+    margin-top: 4px;
+}
+
+.back-page {
+    background-color: #1e272e;
+    color: white;
+    display: flex;
+    justify-content: center;
+    transform: rotateY(180deg);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+    text-align: center;
+    padding: 20px;
+    max-width: 500px;
+    margin-top: 95px;
+}
+
+.card-content h3 {
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.card-description {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.card-button {
+    background-color: salmon;
+    color: bisque;
+    padding: 17px 24px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card-button:hover {
+    background-color: transparent;
+    color: goldenrod;
+    border: 1px solid #eaeaea;
+}
+
+
+.wrapper2 {
+    perspective: 3000px;
+    margin-left: 25px;
+    margin-top: 25px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.card2 {
+    flex: 1;
+    width: 360px;
+    height: 530px;
+    transform-style: preserve-3d;
+    transition: transform .8s ease-in-out;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), 
+    -5px -5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+
+.card2:hover {
+    transform: rotateY(180deg);
+}
+
+.front-page2, .back-page2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+}
+
+.front-page2 {
+    background-image: url(img/ivan-catus-sEVRr3e6dn4-unsplash.jpg);
+    background-size: cover;
+}
+
+.card-info2 {
+    position: absolute;
+    bottom: 50px;
+    left: 45px;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.card-title2 {
+    font-style: 2rem;
+    font-weight: bold;
+}
+
+.card-subtitle2 {
+    font-size: 1.2rem;
+    margin-top: 4px;
+}
+
+.back-page2 {
+    background-color: #1e272e;
+    color: white;
+    display: flex;
+    justify-content: center;
+    transform: rotateY(180deg);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.card-content2 {
+    text-align: center;
+    padding: 20px;
+    max-width: 500px;
+    margin-top: 30px;
+}
+
+.card-content2 h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 80px;
+}
+
+.card-description2 {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.card-button2 {
+    background-color: salmon;
+    color: bisque;
+    padding: 17px 24px;
+    margin-top: 25px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card-button2:hover {
+    background-color: transparent;
+    color: goldenrod;
+    border: 1px solid #eaeaea;
 }
 
 .footer {
-    background-color: #333;
+    background-color: #1e272e;
     padding: 10px;
+    margin-top: 50px;
 }
 
 .footer .copy {

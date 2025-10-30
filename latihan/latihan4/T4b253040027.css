@@ -51,14 +51,14 @@ table {
 body {
     font: 16px/28px arial, sans-serif;
     background-color: #eaeaea;
-    background-image: linear-gradient(to bottom, lightgray, white);
+    background-image: url(img/what-the-hex.png);
     color: #333;
 }
 
 .container {
     width: 800px;
     margin: auto;
-    background-color: white;
+    background-image: linear-gradient(to bottom, #f4f4f4, white);
 }
 
 .header {
@@ -139,6 +139,11 @@ body {
 .content .penulis a {
     color: darkblue;
     text-decoration: none;
+}
+
+.content .penulis a:hover {
+    color: goldenrod;
+    text-decoration: underline;
 }
 
 .content p {
@@ -359,6 +364,21 @@ body {
     background-color: transparent;
     color: goldenrod;
     border: 1px solid #eaeaea;
+}
+
+.clossing {
+    padding: 20px;
+    font-size: 14px;
+}
+
+.clossing .source a {
+    color: darkblue;
+    text-decoration: none;
+}
+
+.clossing .source a:hover {
+    color: goldenrod;
+    text-decoration: underline;
 }
 
 .footer {

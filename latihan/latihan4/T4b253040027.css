@@ -51,20 +51,33 @@ table {
 body {
     font: 16px/28px arial, sans-serif;
     background-color: #eaeaea;
-    background-image: url(img/what-the-hex.png);
-    color: #333;
+    background-image: url(img/double-bubble-dark.webp);
+    color: #E3E2DF;
 }
 
 .container {
     width: 800px;
     margin: auto;
-    background-image: linear-gradient(to bottom, #f4f4f4, white);
+    background-color: #0B0B0B; 
 }
 
 .header {
     padding: 30px;
     padding-bottom: 10px;
     text-align: center;
+}
+
+.header .logo-porsche {
+    width: 100px;
+    height: auto;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-right: 53px;
 }
 
 .header .judul {
@@ -78,19 +91,19 @@ body {
 .header ul li {
     display: inline-block;
     margin-top: 20px;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .header a {
     position: relative;
     text-decoration: none;
-    color: darkblue;
+    color: white;
     padding: 10px 0;
     transition: .5s ease;
 }
 
 .header a:hover {
-    color: goldenrod;
+    color: gold;
 }
 
 .header a::after {
@@ -100,7 +113,7 @@ body {
     left: 0;
     width: 0;
     height: 3px;
-    background-color: goldenrod;
+    background-color: gold;
     transition: width 0.3s ease;
 }
 
@@ -137,12 +150,12 @@ body {
 }
 
 .content .penulis a {
-    color: darkblue;
+    color: goldenrod;
     text-decoration: none;
 }
 
 .content .penulis a:hover {
-    color: goldenrod;
+    color: #E3E2DF;
     text-decoration: underline;
 }
 
@@ -153,7 +166,7 @@ body {
 
 .wrapper {
     perspective: 3000px;
-    margin-left: 25px;
+    margin: 15px;
     display: flex;
     gap: 20px;
     justify-content: space-around;
@@ -169,8 +182,8 @@ body {
     transition: transform .8s ease-in-out;
     cursor: pointer;
     border: 1px solid #ccc;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), 
-    -5px -5px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 10px #cccccc65, 
+    -5px -5px 10px #cccccc65;
     border-radius: 15px;
 }
 
@@ -196,7 +209,7 @@ body {
     bottom: 50px;
     left: 45px;
     color: white;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 6px white;
     text-align: center;
 }
 
@@ -235,7 +248,7 @@ body {
 
 .card-description {
     font-size: 1rem;
-    color: #ccc;
+    color: #cccccc65;
     margin-bottom: 20px;
     line-height: 1.6;
 }
@@ -260,8 +273,7 @@ body {
 
 .wrapper2 {
     perspective: 3000px;
-    margin-left: 25px;
-    margin-top: 25px;
+    margin: 15px;
     display: flex;
     gap: 20px;
     justify-content: space-around;
@@ -277,8 +289,8 @@ body {
     transition: transform .8s ease-in-out;
     cursor: pointer;
     border: 1px solid #ccc;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), 
-    -5px -5px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 10px #cccccc65, 
+    -5px -5px 10px #cccccc65;
     border-radius: 15px;
 }
 
@@ -304,7 +316,7 @@ body {
     bottom: 50px;
     left: 45px;
     color: white;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 6px #cccccc65;
     text-align: center;
 }
 
@@ -372,7 +384,7 @@ body {
 }
 
 .clossing .source a {
-    color: darkblue;
+    color: #E3E2DF;
     text-decoration: none;
 }
 
@@ -382,13 +394,13 @@ body {
 }
 
 .footer {
-    background-color: #1e272e;
+    background-color: goldenrod;
     padding: 10px;
     margin-top: 50px;
 }
 
 .footer .copy {
-    color: #eaeaea;
+    color: #E3E2DF;
     text-align: center;
     font-size: 12px;
 }

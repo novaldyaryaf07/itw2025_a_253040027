@@ -1,0 +1,212 @@
+/* FONT */
+@font-face {
+    font-family: 'raleway-black';
+    src: url(../fonts/raleway-black-webfont.woff) format('woff');
+}
+
+/* STYLE UTAMA */
+body {
+    font: 16px/36px 'raleway-black';
+    background-color: #F8EDEB;
+}
+
+.header {
+    padding: 20px;
+    padding-bottom: 10px;
+    text-align: right;
+}
+
+.header .judul {
+    color: #D7000F;
+    font-size: 65px;
+    margin: 10px 0;
+    margin-left: 5px;
+    float: left;
+    text-shadow: 2px 4px 3px rgba(230, 216, 173, .5);
+    margin-bottom: 30px;
+}
+
+.header ul li {
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 40px;
+}
+
+.header a {
+    position: relative;
+    text-decoration: none;
+    color: #D7000F;
+    text-shadow: 1px 2px 3px rgba(230, 216, 173, .23);
+    padding: 10px 0;
+    transition: .5s ease;
+}
+
+.header a:hover {
+    color: #A5B452;
+}
+
+.header a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #A5B452;
+    transition: width 0.3s ease;
+}
+
+.header a:hover::after {
+    width: 100%;
+}
+
+.container {
+    width: 800px;
+    height: 1000px;
+    background-color: #FADADD;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 0 3px 3px rgba(230, 216, 173, .23);
+    border-radius: 5px;
+    background-image: url(../img/Full/quinton-raymond-1-XhkLfM0_o-unsplash-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-position: 435px 430px;
+
+}
+
+.japanese-picture {
+    height: 200px;
+    background-image: url(../img/Full/sofia-m-txgiC79ryVM-unsplash.jpg);
+    background-size: cover;
+    background-position: 0px -100px;
+    border-radius: 10px;
+}
+
+.picture li {
+    width: 120px;
+    height: 180px;
+    overflow: hidden;
+    border: 3px solid #E6D8AD;
+    float: left;
+    margin-right: 35px;
+    margin-left: 40px;
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.picture li, .picture li img, .picture li span {
+    border-radius: 25px;
+}
+
+.picture li span {
+    display: block;
+    width: 120px;
+    height: 180px;
+    background-color: rgba(230, 216, 173, .5);
+    position: absolute;
+    top: 0;
+    text-align:center;
+    line-height: 180px;
+    color: #D7000F;
+    text-shadow: 1px 1px 2px #f4f4f4;
+    opacity: 0;
+    transition: .5s;
+}
+
+.picture li a:hover span {
+    opacity: 1;
+}
+
+.container p {
+    text-align: justify;
+    width: 750px;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.container h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* OVERLAY */
+
+.overlay {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 9999;
+    transition: .8s;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.overlay:target {
+    width: auto;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.overlay img {
+    max-height: 100%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .5);
+}
+
+.overlay:target img {
+    animation: zoomandfade 1s;
+}
+
+.overlay .close {
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    margin-left: -40px;
+    color: #D7000F;
+    text-decoration: none;
+    border: 1px solid #FCC9B9;
+    line-height: 10px;
+    padding: 8px;
+    border-radius: 15px;
+    opacity: 0;
+}
+
+.overlay:target .close {
+    animation: slidedownfade .5s .5s forwards;
+}
+
+/* ANIMASI */
+@keyframes zoomandfade {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slidedownfade {
+    0% {
+        opacity: 0;
+        margin-top: -20px;
+    }
+
+    100% {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+
+.clear {
+    clear: both;
+}

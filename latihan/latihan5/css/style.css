@@ -8,6 +8,8 @@
 body {
     font: 16px/36px 'raleway-black';
     background-color: #F8EDEB;
+    background-image: url(../img/Full/Everyday\ Life\ in\ Japan\ 8-Bit\ Gifs.gif);
+    background-size: 1264px 1046px;
 }
 
 .header {
@@ -62,15 +64,16 @@ body {
 
 .container {
     width: 800px;
-    height: 1000px;
+    height: 900px;
     background-color: #FADADD;
     margin: auto;
     padding: 20px;
     box-shadow: 0 0 3px 3px rgba(230, 216, 173, .23);
     border-radius: 5px;
-    background-image: url(../img/Full/quinton-raymond-1-XhkLfM0_o-unsplash-removebg-preview.png);
+    background-image: url(../img/Full/processed_image\ sekian.png);
     background-repeat: no-repeat;
-    background-position: 435px 430px;
+    background-position: 480px 340px;
+    background-size: 400px;
 
 }
 
@@ -88,7 +91,7 @@ body {
     overflow: hidden;
     border: 3px solid #E6D8AD;
     float: left;
-    margin-right: 35px;
+    margin-right: 30px;
     margin-left: 40px;
     margin-bottom: 8px;
     position: relative;
@@ -107,8 +110,8 @@ body {
     top: 0;
     text-align:center;
     line-height: 180px;
-    color: #D7000F;
-    text-shadow: 1px 1px 2px #f4f4f4;
+    color: #fcb39c;
+    text-shadow: 1px 1px 7px rgba(0, 0, 0, .8);
     opacity: 0;
     transition: .5s;
 }
@@ -126,9 +129,27 @@ body {
     margin-left: 10px;
 }
 
-.container h3 {
-    text-align: center;
+.container .matsuri {
+    width: 300px;
     margin-bottom: 15px;
+    text-align: center;
+    margin-left: 250px;
+}
+
+.container .Tabemono {
+    width: 300px;
+    margin-left: 250px;
+    margin-bottom: 15px;
+    text-align: center;
+    margin-top: -125px;
+}
+
+.image-1 {
+    width: 150px;
+    height: 150px;
+    margin-left: -95px;
+    margin-bottom: 15px;
+    margin-top: -40px;
 }
 
 /* OVERLAY */
@@ -181,6 +202,23 @@ body {
 .overlay:target .close {
     animation: slidedownfade .5s .5s forwards;
 }
+
+/* NAVIGASI */
+.next, .prev {
+    width: 57px;
+    height: 38px;
+    background-image: url(../img/processed_image\ 1.png);
+    position: absolute;
+    text-indent: -9999px;
+    top: 85%;
+    right: 560px;
+}
+
+.prev {
+    background-image: url(../img/processed_image\ -\ Copy\ 1.png);
+    margin-right: 85px;
+}
+
 
 /* ANIMASI */
 @keyframes zoomandfade {

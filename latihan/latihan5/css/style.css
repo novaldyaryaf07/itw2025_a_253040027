@@ -9,7 +9,7 @@ body {
     font: 16px/36px 'raleway-black';
     background-color: #F8EDEB;
     background-image: url(../img/Full/Everyday\ Life\ in\ Japan\ 8-Bit\ Gifs.gif);
-    background-size: 1264px 1046px;
+    background-size: cover;
 }
 
 .header {
@@ -24,7 +24,7 @@ body {
     margin: 10px 0;
     margin-left: 5px;
     float: left;
-    text-shadow: 2px 4px 3px rgba(230, 216, 173, .5);
+    text-shadow: 2px 4px 3px rgba(230, 216, 173, .8);
     margin-bottom: 30px;
 }
 
@@ -38,7 +38,7 @@ body {
     position: relative;
     text-decoration: none;
     color: #D7000F;
-    text-shadow: 1px 2px 3px rgba(230, 216, 173, .23);
+    text-shadow: 1px 2px 3px rgba(230, 216, 173, .7);
     padding: 10px 0;
     transition: .5s ease;
 }
@@ -64,13 +64,13 @@ body {
 
 .container {
     width: 800px;
-    height: 900px;
+    height: 1600px;
     background-color: #FADADD;
     margin: auto;
     padding: 20px;
     box-shadow: 0 0 3px 3px rgba(230, 216, 173, .23);
     border-radius: 5px;
-    background-image: url(../img/Full/processed_image\ sekian.png);
+    /* background-image: url(../img/Full/processed_image\ sekian.png); */
     background-repeat: no-repeat;
     background-position: 480px 340px;
     background-size: 400px;
@@ -130,18 +130,27 @@ body {
 }
 
 .container .matsuri {
-    width: 300px;
-    margin-bottom: 15px;
+    width: 200px;
+    margin-bottom: 20px;
     text-align: center;
-    margin-left: 250px;
+    margin-left: 300px;
+    margin-top: -50px;
 }
 
 .container .Tabemono {
-    width: 300px;
-    margin-left: 250px;
+    width: 200px;
+    margin-left: 300px;
     margin-bottom: 15px;
     text-align: center;
     margin-top: -125px;
+}
+
+.container .Facts {
+    width: 200px;
+    margin-left: 300px;
+    margin-bottom: 5px;
+    text-align: center;
+    margin-top: 25px;
 }
 
 .image-1 {
@@ -150,6 +159,64 @@ body {
     margin-left: -95px;
     margin-bottom: 15px;
     margin-top: -40px;
+}
+
+.image-2 {
+    width: 100px;
+    height: 100px;
+    margin-left: 515px;
+    margin-bottom: -20px;
+    margin-top: -35px;
+}
+
+.image-3 {
+    width: 150px;
+    height: 150px;
+    margin-left: 735px;
+    margin-bottom: -50px;
+    margin-top: -75px;
+    rotate: 20deg;
+}
+
+.carousel {
+    display: flex;
+    height: 20rem;
+    gap: 1rem;
+    margin-top: -20px;
+}
+
+.carousel > div {
+    flex: 1;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all .8s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.carousel > div:hover {
+    flex: 5;
+}
+
+.carousel-1 {
+    
+    background-image: url(../img/Full/tianshu-liu-SBK40fdKbAg-unsplash.jpg);
+}
+
+.carousel-2 {
+    background-image: url(../img/Full/yu-kato-824OwkP7sgk-unsplash.jpg);
+}
+
+.carousel-3 {
+    background-image: url(../img/Full/victoriano-izquierdo-CS8Get8gGBI-unsplash.jpg);
+}
+
+.carousel-4 {
+    background-image: url(../img/Full/alex-wolfe-osCNe-hGHVg-unsplash.jpg);
+}
+
+.carousel-5 {
+    background-image: url(../img/Full/yash-banka-PyluYDQIPtc-unsplash.jpg);
 }
 
 /* OVERLAY */
@@ -203,6 +270,11 @@ body {
     animation: slidedownfade .5s .5s forwards;
 }
 
+.overlay:target .next, 
+.overlay:target .prev {
+    animation: FadeAjah .5s .5s forwards;
+}
+
 /* NAVIGASI */
 .next, .prev {
     width: 57px;
@@ -212,6 +284,7 @@ body {
     text-indent: -9999px;
     top: 85%;
     right: 560px;
+    opacity: 0;
 }
 
 .prev {
@@ -221,6 +294,16 @@ body {
 
 
 /* ANIMASI */
+@keyframes FadeAjah {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 @keyframes zoomandfade {
     0% {
         transform: scale(0);

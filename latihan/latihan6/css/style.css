@@ -1,0 +1,195 @@
+body {
+    background-color: #3e592a;
+}
+
+.header {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.header img {
+    margin-left: 25px;
+    width: 150px;
+    height: auto;
+}
+
+.header ul {
+    display: flex;
+}
+
+.header li {
+    margin: auto;
+    padding: 0 20px;
+}
+
+.header a {
+    position: relative;
+    text-decoration: none;
+    color: #f5f6e9;
+    transition: .5s ease;
+}
+
+.header a:hover {
+    color: rgb(140, 187, 73);
+}
+
+.header a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(140, 187, 73);
+    transition: width .3s ease;
+}
+
+.header a:hover::after {
+    width: 100%;
+}
+
+.container-satu {
+    font-family: "Open Sans", sans-serif;
+    width: 1100px;
+    background-color: #f5f6e9;
+    margin: auto;
+    display: flex;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 3px 4px 8px rgba(140, 187, 73, .5);
+}
+
+.kolom-satu {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.Judul-1 {
+    color: #3e592a;
+    font-size: 65px;
+    font-weight: 800;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, .5);
+}
+
+strong {
+    color: rgb(140, 187, 73);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, .5);
+}
+
+.kolom-satu .satu {
+    width: 450px;
+    color: #3e592a;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: end;
+}
+
+.kolom-satu .dua {
+    margin-top: 15px;
+    color: #3e592a;
+    width: 500px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: end;
+}
+
+.container-satu img {
+    width: auto;
+    height: 460px;
+}
+
+.container-dua {
+    width: 1100px;
+    margin: 50px auto;
+    display: flex;
+    font-family: "Open Sans", sans-serif;
+}
+
+.container-dua h2 {
+    font-weight: 800;
+}
+
+.card-satu {
+    border: 1px solid #f5f6e9;
+    border-radius: 10px;
+    background-color: #f5f6e9;
+    overflow: hidden;
+    margin: 10px;
+    flex: 1;
+    box-shadow: 3px 4px 8px rgba(140, 187, 73, .5);
+}
+
+.card-satu .picture {
+    height: 250px;
+    background-image: url(../img/_DSC0044.jpg);
+    background-size: cover;
+    background-position-y: -150px;
+}
+
+.card-satu .content {
+    text-align: center;
+    padding: 10px;
+}
+
+.card-satu .content p {
+    margin-top: 10px;
+}
+
+.card-dua {
+    border: 1px solid #f5f6e9;
+    border-radius: 10px;
+    background-color: #f5f6e9;
+    overflow: hidden;
+    margin: 10px;
+    flex: 1;
+    box-shadow: 3px 4px 8px rgba(140, 187, 73, .5);
+}
+
+.card-dua .picture {
+    height: 250px;
+    background-image: url(../img/_DSC0069\ \(1\).jpg);
+    background-size: cover;
+    background-position-y: -150px;
+}
+
+.card-dua .content {
+    text-align: center;
+    padding: 10px;
+}
+
+.card-dua .content p {
+    margin-top: 10px;
+}
+
+.card-tiga {
+    border: 1px solid #f5f6e9;
+    border-radius: 10px;
+    background-color: #f5f6e9;
+    overflow: hidden;
+    margin: 10px;
+    flex: 1;
+    box-shadow: 3px 4px 8px rgba(140, 187, 73, .5);
+}
+
+.card-tiga .picture {
+    height: 250px;
+    background-image: url(../img/_DSC0028.jpg);
+    background-size: cover;
+    background-position-y: -150px;
+}
+
+.card-tiga .content {
+    text-align: center;
+    padding: 10px;
+}
+
+.card-tiga .content p {
+    margin-top: 10px;
+}

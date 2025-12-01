@@ -613,7 +613,7 @@ strong {
     }
 
     .desc-content {
-        text-align: center;
+        text-align: justify;
         padding-right: 35px;
     }
 }

@@ -1,0 +1,32 @@
+body {
+  background-color: #efe7df;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.jumbotron {
+  padding-top: 6rem;
+  background-color: #ede0d4;
+}
+
+#project {
+  background-color: #ede0d4;
+}
+
+section {
+  padding-top: 5rem;
+}
+
+nav {
+  background-color: #b08968;
+}
+
+footer {
+  background-color: #b08968;
+}
+
+@media screen and (max-width: 576px) {
+
+}

@@ -11,7 +11,15 @@ body {
   background-color: #ede0d4;
 }
 
+#experience {
+  background-color: #ede0d4;
+}
+
 #project {
+  background-color: #efe7df;
+}
+
+#contact {
   background-color: #ede0d4;
 }
 
@@ -27,6 +35,6 @@ footer {
   background-color: #b08968;
 }
 
-@media screen and (max-width: 576px) {
-
+.btn {
+  background-color: #b08968;
 }

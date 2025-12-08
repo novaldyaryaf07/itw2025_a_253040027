@@ -15,6 +15,24 @@ body {
   background-color: #ede0d4;
 }
 
+.card-title1 {
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.card-text1 {
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.link-company {
+  text-decoration: none;
+  color: white;
+}
+
+.link-company:hover {
+  color: #b08968;
+  transition: 0.3s;
+}
+
 #project {
   background-color: #efe7df;
 }
